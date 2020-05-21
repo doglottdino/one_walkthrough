@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bsync": "npx browser-sync start --proxy localhost --serveStatic .\\webapp"
+    "bsync": "npx browser-sync start --server \"webapp\" --directory --serveStatic \"..\" --files \"webapp/css/*.css\" --no-open"
   },
   "repository": {
     "type": "git",
